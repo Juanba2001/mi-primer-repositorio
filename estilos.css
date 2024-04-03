@@ -1,0 +1,76 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*<!-- Barra de Navegacion -->*/
+span{
+    color: red;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+/*<!-- Barra de Navegacion -->*/
+
+/* Carrusel */
+.carousel-item{
+    max-height: 500px;
+}
+/* Carrucel */
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+footer .redes a{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 15px;
+}
+/* Footer */
+
+
+/*<--Subir-->*/
+.subir{
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(56, 55, 55);
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px white;
+}
+/*<--Subir-->*/
+section{
+    background-size: cover;
+    background-position: center;
+    background-image: url(imagenes/Espacio\ de\ trabajo.jpg)
+    
+}
+section h2{
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+main{
+    height: auto;
+    width: 100%;
+    background-image: url(imagenes/interposer.jpg);
+    background-position: center;
+}
+
+main .card{
+    text-align: center;
+}
