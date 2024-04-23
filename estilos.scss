@@ -1,25 +1,26 @@
-html {
+html{
     scroll-behavior: smooth;
 }
 
 /*<!-- Barra de Navegacion -->*/
-span {
+span{
     color: red;
 }
 
-.nav-link {
+.nav-link{
     color: black !important;
 }
 
 /*<!-- Barra de Navegacion -->*/
+
 /* Carrusel */
-.carousel-item {
+.carousel-item{
     max-height: 500px;
 }
-
 /* Carrucel */
+
 /* Footer */
-footer {
+footer{
     width: 100%;
     background-color: black;
     color: white;
@@ -28,15 +29,16 @@ footer {
     font-size: 20px;
 }
 
-footer .redes a {
+footer .redes a{
     color: white;
     font-size: 35px;
     letter-spacing: 15px;
 }
-
 /* Footer */
+
+
 /*<--Subir-->*/
-.subir {
+.subir{
     width: 40px;
     height: 40px;
     color: white;
@@ -49,40 +51,37 @@ footer .redes a {
     border-radius: 50%;
     box-shadow: 0 0 5px 5px white;
 }
-
 /*<--Subir-->*/
-section {
+section{
     background-size: cover;
     background-position: center;
-    background-image: url(imagenes/Espacio\ de\ trabajo.jpg);
+    background-image: url(imagenes/Espacio\ de\ trabajo.jpg)
+    
 }
-
-section h2 {
+section h2{
     color: white;
     text-align: center;
     line-height: 40px;
 }
 
-main {
+main{
     height: auto;
     width: 100%;
     background-image: url(imagenes/interposer.jpg);
     background-position: center;
 }
 
-main .container {
+main .container{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-main #FondoContacto {
+main #FondoContacto{
     background-image: url(imagenes/laboratorio.jpg);
     width: 100%;
     height: 550px;
     background-size: cover;
     background-position: center;
 }
-
-/*# sourceMappingURL=estilos.css.map */
