@@ -71,6 +71,18 @@ main{
     background-position: center;
 }
 
-main .card{
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
+
+main #FondoContacto{
+    background-image: url(imagenes/laboratorio.jpg);
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
