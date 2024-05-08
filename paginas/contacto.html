@@ -2,20 +2,20 @@
 <html lang="es">
 
 <head>
+    <meta name="description" content="Reparacion de celulares de Iphone y android, a nivel componente y tambien cambio de perifericos, seguridad y confianza">
+    <meta name="keywords" content="GMFREPARACIONES, Reparaciones, Iphone, Android, repuesto, arreglo, fix, servicio tecnico, Ios, modulo, bateria, pin de carga, seguridad, calidad, contacto, comunicacion, respuesta, informacion">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Inicia BS 5.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Finaliza BS 5.1 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../estilos.css">
     <link rel="shortcut icon" href="../imagenes/icono.ico" type="image/x-icon">
     <title>GFM Reparaciones</title>
 </head>
-
 <body>
-    <!-- Barra de Navegacion -->
     <nav class="navbar navbar-expand-sm bg-light navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-dark" href="#"><span>GFM</span> REPARACIONES</a>
@@ -34,7 +34,7 @@
                         <a class="nav-link" href="./servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Sobre Mi</a>
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
@@ -43,26 +43,53 @@
             </div>
         </div>
     </nav>
-    <!-- Barra de Navegacion -->
-    <section>
-        <div class="p-3 bg-black text-white text-center">
-            <h1>Ubicacion</h1>
-        </div>
-    </section>
-
-    <main>
-        <div id="FondoContacto">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md 6 col-lg 2 mt-5">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.459766496971!2d-60.704088625243386!3d-32.93886877149422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab24af901de3%3A0x77a303e8568efa7e!2sGFM%20Reparaciones!5e0!3m2!1ses!2sar!4v1713826740523!5m2!1ses!2sar" width="600" height="450"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="d-flex justify-content-center align-items-center p-3">
+        <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4">
+            <div class="mb-4 d-flex justify-content-start align-items-center">
+                <h4> <i class="bi bi-chat-left-quote"></i> &nbsp; Contacto</h4>
+            </div>
+            <div class="mb-1">
+                <form id="contacto">
+                    <div class="mb-4 d-flex justify-content-between">
+                        <div>
+                            <label for="nombre"> <i class="bi bi-person-fill"></i> Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ej: Juan"
+                                required>
+                            <div class="nombre text-danger "></div>
+                        </div>
+                        <div>
+                            <label for="apellido"> <i class="bi bi-person-bounding-box"></i> Apellido</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido"
+                                placeholder="Ej: Perdiguero" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
                     </div>
-                </div>
+                    <div class="mb-4">
+                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
+                        <input type="email" class="form-control" name="correo" id="correo"
+                            placeholder="Ej: JuanPer@hotmail.com" required>
+                        <div class="correo text-danger"></div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="sexo"><i class="bi bi-gender-ambiguous"></i> Sexo: </label>
+                        <input type="radio" class="form-check-input" name="sexo" value="masculino"> Masculino
+                        <input type="radio" class="form-check-input" name="sexo" value="femenino"> Femenino
+                        <div class="sexo text-danger"></div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensaje"> <i class="bi bi-chat-right-dots-fill" required></i> Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Ej: Info sobre reparacion"></textarea>
+                        <div class="mensaje text-danger"></div>
+                    </div>
+                    <div class="mb-2">
+                        <button id="botton" class="col-12 btn btn-primary d-flex justify-content-center">
+                            <span style="color: white;">Enviar</span><i id="icono" class="bi bi-cursor-fill "></i>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-    </main>
-
-    <!-- Footer -->
+    </section>
     <footer>
         <p>Todos los derechos son reservados por copyright.</p>
         <div class="redes">
@@ -72,16 +99,14 @@
             <a href="https://www.youtube.com/@gfmreparaciones"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </footer>
-    <!-- Footer -->
-
-    <!-- Inicia BS 5.1 -->
+    <a href="#" class="subir">
+        <i class="fa-solid fa-up-long"></i>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
-    <!-- Finaliza BS 5.1 -->
 </body>
 
 </html>

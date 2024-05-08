@@ -1,26 +1,37 @@
-html{
-    scroll-behavior: smooth;
+body::-webkit-scrollbar{
+    width: 12px;
 }
 
-/*<!-- Barra de Navegacion -->*/
-span{
-    color: red;
-}
-
-.nav-link{
+body a.nav-link{
     color: black !important;
 }
 
-/*<!-- Barra de Navegacion -->*/
-
-/* Carrusel */
-.carousel-item{
-    max-height: 500px;
+body a.nav-link:hover{
+    color: red !important;
 }
-/* Carrucel */
 
-/* Footer */
-footer{
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(63, 100, 179);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(77, 68, 189);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+span {
+    color: red;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+footer {
     width: 100%;
     background-color: black;
     color: white;
@@ -29,16 +40,13 @@ footer{
     font-size: 20px;
 }
 
-footer .redes a{
+footer .redes a {
     color: white;
     font-size: 35px;
     letter-spacing: 15px;
 }
-/* Footer */
 
-
-/*<--Subir-->*/
-.subir{
+.subir {
     width: 40px;
     height: 40px;
     color: white;
@@ -51,37 +59,68 @@ footer .redes a{
     border-radius: 50%;
     box-shadow: 0 0 5px 5px white;
 }
-/*<--Subir-->*/
-section{
+
+section {
     background-size: cover;
     background-position: center;
     background-image: url(imagenes/Espacio\ de\ trabajo.jpg)
-    
 }
-section h2{
+
+section h2 {
     color: white;
     text-align: center;
     line-height: 40px;
 }
 
-main{
+.FondoNosotros {
+    background-image: url(imagenes/Espacio\ de\ trabajo.jpg);
+    width: auto;
     height: auto;
-    width: 100%;
-    background-image: url(imagenes/interposer.jpg);
     background-position: center;
+    padding: 10px;
 }
 
-main .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.FondoNosotros h2{
     text-align: center;
 }
 
-main #FondoContacto{
-    background-image: url(imagenes/laboratorio.jpg);
-    width: 100%;
-    height: 550px;
-    background-size: cover;
+.FondoIndex {
+    background-image: url(imagenes/Espacio\ de\ trabajo.jpg);
+    width: auto;
+    height: auto;
     background-position: center;
+}
+
+.FondoCarrucelIndex {
+    width: auto;
+    height: auto;
+}
+
+.carousel-item {
+    max-height: 500px;
+}
+
+.FondoContacto {
+    background-image: url(imagenes/contacto.jpg);
+}
+
+.FondoNosotros .img-fluid{
+    max-height: 350px;
+}
+
+.carousel-caption h5{
+    color: black;
+    padding: 4px;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.card{
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
 }
